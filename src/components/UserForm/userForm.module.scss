@@ -1,0 +1,46 @@
+@use "../../styles/variables" as *;
+
+.form {
+  margin-bottom: 16px;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input {
+  flex: 1 1 180px;
+  padding: 10px 12px;
+  border: 1px solid $color-input-border;
+  border-radius: $radius-sm;
+  font-size: 14px;
+  font-family: inherit;
+
+  &:focus {
+    outline: 2px solid $color-focus;
+    border-color: transparent;
+  }
+}
+
+.button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: $radius-sm;
+  background: $color-primary;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-hover;
+  }
+}
+
+.error {
+  margin: 8px 0 0;
+  color: $color-danger;
+  font-size: 14px;
+}

@@ -1,0 +1,16 @@
+@use "../styles/variables" as *;
+
+.container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 24px;
+  background: $color-surface;
+  border-radius: $radius-lg;
+  box-shadow: 0 6px 24px rgba(66, 32, 112, 0.12);
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+  color: $color-primary;
+}

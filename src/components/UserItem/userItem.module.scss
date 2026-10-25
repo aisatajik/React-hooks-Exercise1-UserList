@@ -1,0 +1,40 @@
+@use "../../styles/variables" as *;
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 12px 14px;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.email {
+  color: $color-muted;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.delete {
+  padding: 8px 14px;
+  border: none;
+  border-radius: $radius-sm;
+  background: $color-danger;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-danger-hover;
+  }
+}
